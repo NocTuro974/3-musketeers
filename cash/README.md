@@ -21,6 +21,6 @@ node node yourRepo/index.js 666 USD eur pln aud
 Note that you can indicate many currencies output
 
 ## Additionnal Commands
-"--save -s" : used to save the currency as default\n
-"--help -h" : used to display help message\n
-"--version -v" : used to display the version number of this library
+- "--save -s" : used to save the currency as default
+- "--help -h" : used to display help message
+- "--version -v" : used to display the version number of this library
