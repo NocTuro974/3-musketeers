@@ -8,6 +8,10 @@ const config = new Conf();
 
 updateNotifier({pkg}).notify();
 
+/**
+* Set the currency as the new default currency
+* @param {array} argv - The arguments of user's command
+*/
 const saveCurrencies = argv => {
   config.set('defaultFrom', argv[1] || config.get('defaultFrom', 'USD'));
   config.set(
@@ -20,11 +24,17 @@ const saveCurrencies = argv => {
   process.exit(1);
 };
 
+/**
+* Logs the package's version
+*/
 const version = () => {
   console.log(pkg.version);
   process.exit(1);
 };
 
+/**
+* Logs the help
+*/
 const help = () => {
   console.log(`
 Usage:
