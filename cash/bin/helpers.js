@@ -67,6 +67,10 @@ Examples:
   process.exit(1);
 };
 
+/*
+* Checks for commands in the arguments of user command and launchs them
+* @param {array} argv - The arguments of user's command
+*/
 const helpers = argv => {
   // Version
   if (argv.indexOf('--version') !== - 1 || argv.indexOf('-v') !== - 1) {
